@@ -11,7 +11,7 @@ const App = () => {
 
   ]);
 
-  const handlecomplete = (id)=>{
+  const handleComplete = (id)=>{
 
     const updatedtodos = todos.map((todo)=>
     todo.id===id?{...todo, completed:true}:todo
@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div>
     <h1>Parent Component</h1>
-      <Todolist todos={todos} handlecomplete={handlecomplete} />
+      <Todolist todos={todos} handlecomplete={handleComplete} />
     </div>
   )
 }
